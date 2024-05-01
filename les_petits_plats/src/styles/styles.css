@@ -1,5 +1,15 @@
 body {
     margin: 0;
+    font-family: "Monrope", sans-serif;
+}
+
+main {
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: center;
+}
+
+h1, h2, h3 {
     font-family: "Anton", sans-serif;
 }
 
@@ -42,7 +52,6 @@ body {
     align-items: center;
     width: 950px;
     height: 72px;
-    padding: 0 20px;
     border-radius: 10px;
     background-color: white; 
 }
@@ -53,6 +62,7 @@ body {
     border: none;
     padding: 0 50px 0 10px; 
     font-size: 16px;
+    border-radius: 10px;
 }
 
 .search-icon {
@@ -61,4 +71,63 @@ body {
     width: 50px; 
     height: 50px; 
     cursor: pointer; 
+}
+
+.cards-section{
+    padding:100px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 150px;
+}
+
+.recipe-img {
+    height: 250px;
+    width: 380px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card-element {
+    border-radius: 20px;
+    box-shadow: 0px 4px 34px 30px rgba(0, 0, 0, 0.04);
+    max-width: 380px
+}
+
+.recipe-container {
+    padding: 15px;
+    
+}
+
+.recipe-container h3{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.label {
+    font-weight: 700;
+    color: #7A7A7A;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.recipe-description {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.ingredients-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.recipe-ingredients {
+    margin-top: 5px;
+    margin-bottom:0;
+}
+
+.ingredient-quantity {
+    color: #7A7A7A;
+    margin-top:5px;
 }
