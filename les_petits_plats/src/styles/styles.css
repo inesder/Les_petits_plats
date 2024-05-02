@@ -5,8 +5,6 @@ body {
 
 main {
     background-color: #EDEDED;
-    display: flex;
-    justify-content: center;
 }
 
 h1, h2, h3 {
@@ -78,10 +76,13 @@ h1, h2, h3 {
 
 
 .cards-section{
-    padding:100px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    gap: 150px;
+    padding:50px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .recipe-img {
@@ -95,7 +96,7 @@ h1, h2, h3 {
 .card-element {
     border-radius: 20px;
     box-shadow: 0px 4px 34px 30px rgba(0, 0, 0, 0.04);
-    max-width: 380px
+    max-width: 380px;
 }
 
 .recipe-container {
@@ -134,4 +135,46 @@ h1, h2, h3 {
 .ingredient-quantity {
     color: #7A7A7A;
     margin-top:5px;
+}
+
+.filters-section{
+    display: flex;
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 81%;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.filters-container{
+    display: flex;
+    gap: 40px;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    border-radius: 11px;
+    width: 200px;
+    padding: 17px 5px;
+}
+
+.dropdown-toggle::after {
+    margin-left: 50px;
+}
+
+.dropdown-menu {
+    transform: none !important;  // Surcharge pour éviter les transformations non désirées
+}
+
+.dropdown-menu.show {
+    transform: none !important;
+    top: 100% !important;  // Assurez-vous que cela positionne correctement le menu juste en dessous du bouton
 }
