@@ -160,11 +160,27 @@ h1, h2, h3 {
     border-color: white;
 }
 
+.btn-secondary:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle  {
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+
 .btn-group-lg>.btn, .btn-lg {
     border-radius: 11px;
     width: 200px;
     padding: 17px 5px;
 }
+
+.btn.focus, .btn:focus {
+    box-shadow: none !important;
+ }
 
 .dropdown-toggle::after {
     margin-left: 50px;
@@ -176,5 +192,6 @@ h1, h2, h3 {
 
 .dropdown-menu.show {
     transform: none !important;
-    top: 100% !important;  // Assurez-vous que cela positionne correctement le menu juste en dessous du bouton
+    width: 200px;
+    top:90% !important;  // Assurez-vous que cela positionne correctement le menu juste en dessous du bouton
 }
