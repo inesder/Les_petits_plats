@@ -1,15 +1,17 @@
 // Importation des recettes
 import recipes from '../datas/recipes.js';
-
+import { sortCards } from './sort.js';
 
 // Fonction principale pour afficher les recettes
-export function displayRecipes() {
+export function displayRecipes(recipes) {
     const cardsSection = document.querySelector('.cards-section');
+    cardsSection.innerHTML = '';
     recipes.forEach(recipe => {
         const recipeCard = createRecipeCard(recipe);
         cardsSection.appendChild(recipeCard);
     });
 }
+
 
 // Fonction pour créer une carte de recette
 function createRecipeCard(recipe) {
