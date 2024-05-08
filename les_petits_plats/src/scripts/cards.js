@@ -1,7 +1,3 @@
-// Importation des recettes
-import recipes from '../datas/recipes.js';
-import { sortCards } from './sort.js';
-
 // Fonction principale pour afficher les recettes
 export function displayRecipes(recipes) {
     const cardsSection = document.querySelector('.cards-section');

@@ -11,8 +11,13 @@ function handleSearch(displayFilteredRecipes) {
         if (inputValue.length >= 3) {
             recipes.forEach(recipe => {
                 let isMatch = recipe.description.toLowerCase().includes(inputValue) ||
-                              recipe.name.toLowerCase().includes(inputValue) ||
-                              recipe.ingredients.some(ing => ing.ingredient.toLowerCase().includes(inputValue));
+                              recipe.name.toLowerCase().includes(inputValue);
+                              for (let j = 0; j < recipe.ingredients.length; j++) {
+                                if (recipe.ingredients[j].ingredient.toLowerCase().includes(inputValue)) {
+                                    isMatch = true;
+                                    break;
+                                }
+                            }
                 if (isMatch) {
                     tempFilteredRecipes.push(recipe);
                 }
@@ -24,6 +29,8 @@ function handleSearch(displayFilteredRecipes) {
         displayFilteredRecipes(tempFilteredRecipes);  // Mettre à jour l'affichage avec les recettes filtrées
     });
 }
+
+
 
 export function sortCards(displayFilteredRecipes) {
     handleSearch(displayFilteredRecipes);
