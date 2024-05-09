@@ -223,3 +223,34 @@ h1, h2, h3 {
     font-weight: 500;
     font-size: 20px
 }
+
+.input-group {
+    margin-bottom: 10px;
+}
+.form-outline {
+width: 150px; 
+}
+
+.form-control {
+    margin-left: 5px;
+
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #ced4da;
+    border-color: #ced4da;
+    border-left: none;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #ced4da;
+    border-color: #ced4da;
+    border-left: none;
+}

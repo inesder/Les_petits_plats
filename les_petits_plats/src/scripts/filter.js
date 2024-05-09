@@ -2,9 +2,47 @@ import recipes from '../datas/recipes.js';
 import { filters } from './state.js';  // Importer les filtres partagés
 import { applyFilters } from './sort.js';  // Importer la fonction applyFilters
 
+function createSearchInput() {
+    // Créer le groupe d'entrée
+    const inputGroup = document.createElement('div');
+    inputGroup.classList.add('input-group');
+
+    // Créer l'élément form-outline
+    const formOutline = document.createElement('div');
+    formOutline.classList.add('form-outline');
+    formOutline.setAttribute('data-mdb-input-init', '');
+
+    // Créer l'élément d'entrée de recherche
+    const searchInput = document.createElement('input');
+    searchInput.type = 'search';
+    searchInput.classList.add('form-control');
+
+    // Créer le bouton de recherche
+    const searchButton = document.createElement('button');
+    searchButton.type = 'button';
+    searchButton.classList.add('btn', 'btn-primary');
+    searchButton.setAttribute('data-mdb-ripple-init', '');
+
+    // Créer l'icône de recherche
+    const searchIcon = document.createElement('i');
+    searchIcon.classList.add('fas', 'fa-search');
+
+    // Assembler les éléments
+    formOutline.appendChild(searchInput);
+    searchButton.appendChild(searchIcon);
+    inputGroup.appendChild(formOutline);
+    inputGroup.appendChild(searchButton);
+
+    return inputGroup;
+}
+
+
 function createIngredientFilterButton(displayFilteredRecipes) {
     const container = createFilterButton("Ingrédients");
     const dropdownMenu = container.querySelector('.dropdown-menu');
+
+    dropdownMenu.appendChild(createSearchInput());
+
     const ingredients = new Set();
     recipes.forEach(recipe => {
         recipe.ingredients.forEach(ingredient => {
@@ -21,6 +59,7 @@ function createIngredientFilterButton(displayFilteredRecipes) {
             applyFilters(displayFilteredRecipes);
             createTag(ingredient, 'ingredient', displayFilteredRecipes);  // Créer un tag
         });
+        
         dropdownMenu.appendChild(item);
     });
     return container;
@@ -29,6 +68,9 @@ function createIngredientFilterButton(displayFilteredRecipes) {
 function createEquipmentFilterButton(displayFilteredRecipes) {
     const container = createFilterButton("Appareils");
     const dropdownMenu = container.querySelector('.dropdown-menu');
+
+    dropdownMenu.appendChild(createSearchInput());
+
     const equipment = new Set();
     recipes.forEach(recipe => {
         if (recipe.appliance) {
@@ -53,6 +95,9 @@ function createEquipmentFilterButton(displayFilteredRecipes) {
 function createToolFilterButton(displayFilteredRecipes) {
     const container = createFilterButton("Ustensiles");
     const dropdownMenu = container.querySelector('.dropdown-menu');
+
+    dropdownMenu.appendChild(createSearchInput());
+    
     const tools = new Set();
     recipes.forEach(recipe => {
         recipe.ustensils.forEach(ustensil => {
