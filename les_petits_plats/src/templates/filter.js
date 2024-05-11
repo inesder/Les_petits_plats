@@ -2,6 +2,7 @@ import recipes from '../datas/recipes.js';
 import { filters } from '../models/state.js';  // Importer les filtres partagés
 import { applyFilters } from '../scripts/filter.js';  // Importer la fonction applyFilters
 
+// Fonction pour créer un champ de recherche
 function createSearchInput(id, onInput) {
     const inputGroup = document.createElement('div');
     inputGroup.classList.add('input-group');
@@ -26,6 +27,7 @@ function createSearchInput(id, onInput) {
     const searchIcon = document.createElement('i');
     searchIcon.classList.add('fas', 'fa-search');
 
+    // Assembler les éléments du champ de recherche
     formOutline.appendChild(searchInput);
     searchButton.appendChild(searchIcon);
     inputGroup.appendChild(formOutline);
@@ -65,9 +67,12 @@ function createTag(tagText, filterType, displayFilteredRecipes) {
     const closeButton = document.createElement('span');
     closeButton.classList.add('tag-close');
     closeButton.textContent = 'x';
+
+    // Ajout du gestionnaire d'événements pour supprimer le tag et mettre à jour les filtres
     closeButton.addEventListener('click', function() {
         tag.remove();
         if (filterType === 'ingredients' || filterType === 'ustensils') {
+            // Mise à jour des filtres pour supprimer l'élément correspondant
             const updatedFilters = [];
             for (let i = 0; i < filters[filterType].length; i++) {
                 if (filters[filterType][i] !== tagText.toLowerCase()) {
@@ -109,6 +114,7 @@ function createIngredientFilterButton(displayFilteredRecipes) {
     const container = createFilterButton("Ingrédients");
     const dropdownMenu = container.querySelector('.dropdown-menu');
 
+    // Collecter les ingrédients uniques des recettes
     const ingredients = [];
     for (let i = 0; i < recipes.length; i++) {
         const recipe = recipes[i];
@@ -120,6 +126,7 @@ function createIngredientFilterButton(displayFilteredRecipes) {
         }
     }
 
+    // Créer les éléments de menu pour chaque ingrédient
     const allIngredientItems = [];
     for (let i = 0; i < ingredients.length; i++) {
         const ingredient = ingredients[i];
@@ -127,6 +134,8 @@ function createIngredientFilterButton(displayFilteredRecipes) {
         item.classList.add('dropdown-item');
         item.href = "#";
         item.textContent = ingredient;
+
+        // Ajout du gestionnaire d'événements pour mettre à jour les filtres et créer un tag
         item.addEventListener('click', function() {
             filters.ingredients.push(ingredient.toLowerCase());
             applyFilters(displayFilteredRecipes);
@@ -135,6 +144,7 @@ function createIngredientFilterButton(displayFilteredRecipes) {
         allIngredientItems.push(item);
     }
 
+    // Mettre à jour le menu déroulant avec tous les ingrédients
     updateDropdownMenu(dropdownMenu, allIngredientItems);
 
     // Ajouter le champ de recherche dans le menu déroulant
@@ -152,6 +162,7 @@ function createEquipmentFilterButton(displayFilteredRecipes) {
     const container = createFilterButton("Appareils");
     const dropdownMenu = container.querySelector('.dropdown-menu');
 
+    // Collecter les appareils uniques des recettes
     const equipment = [];
     for (let i = 0; i < recipes.length; i++) {
         const recipe = recipes[i];
@@ -160,6 +171,7 @@ function createEquipmentFilterButton(displayFilteredRecipes) {
         }
     }
 
+    // Créer les éléments de menu pour chaque appareil
     const allEquipmentItems = [];
     for (let i = 0; i < equipment.length; i++) {
         const item = equipment[i];
@@ -167,6 +179,8 @@ function createEquipmentFilterButton(displayFilteredRecipes) {
         link.classList.add('dropdown-item');
         link.href = "#";
         link.textContent = item;
+
+        // Ajout du gestionnaire d'événements pour mettre à jour les filtres et créer un tag
         link.addEventListener('click', function() {
             filters.appliance = item.toLowerCase();
             applyFilters(displayFilteredRecipes);
@@ -175,6 +189,7 @@ function createEquipmentFilterButton(displayFilteredRecipes) {
         allEquipmentItems.push(link);
     }
 
+    // Mettre à jour le menu déroulant avec tous les appareils
     updateDropdownMenu(dropdownMenu, allEquipmentItems);
 
     // Ajouter le champ de recherche dans le menu déroulant
@@ -192,6 +207,7 @@ function createToolFilterButton(displayFilteredRecipes) {
     const container = createFilterButton("Ustensiles");
     const dropdownMenu = container.querySelector('.dropdown-menu');
 
+    // Collecter les ustensiles uniques des recettes
     const tools = [];
     for (let i = 0; i < recipes.length; i++) {
         const recipe = recipes[i];
@@ -203,6 +219,7 @@ function createToolFilterButton(displayFilteredRecipes) {
         }
     }
 
+    // Créer les éléments de menu pour chaque ustensile
     const allToolItems = [];
     for (let i = 0; i < tools.length; i++) {
         const tool = tools[i];
@@ -210,6 +227,8 @@ function createToolFilterButton(displayFilteredRecipes) {
         link.classList.add('dropdown-item');
         link.href = "#";
         link.textContent = tool;
+
+        // Ajout du gestionnaire d'événements pour mettre à jour les filtres et créer un tag
         link.addEventListener('click', function() {
             filters.ustensils.push(tool.toLowerCase());
             applyFilters(displayFilteredRecipes);
@@ -218,6 +237,7 @@ function createToolFilterButton(displayFilteredRecipes) {
         allToolItems.push(link);
     }
 
+    // Mettre à jour le menu déroulant avec tous les ustensiles
     updateDropdownMenu(dropdownMenu, allToolItems);
 
     // Ajouter le champ de recherche dans le menu déroulant
@@ -241,10 +261,12 @@ export function displayFilter(displayFilteredRecipes) {
     tagsContainer.classList.add('tags-container');
     filtersSection.insertBefore(tagsContainer, filtersContainer);
 
+    // Créer les boutons de filtre pour les ingrédients, les appareils et les ustensiles
     const ingredientFilter = createIngredientFilterButton(displayFilteredRecipes);
     const equipmentFilter = createEquipmentFilterButton(displayFilteredRecipes);
     const toolFilter = createToolFilterButton(displayFilteredRecipes);
 
+    // Ajouter les boutons de filtre au conteneur de filtres
     filtersContainer.appendChild(ingredientFilter);
     filtersContainer.appendChild(equipmentFilter);
     filtersContainer.appendChild(toolFilter);
