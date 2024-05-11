@@ -2,10 +2,10 @@
 export function displayRecipes(recipes) {
     const cardsSection = document.querySelector('.cards-section');
     cardsSection.innerHTML = '';
-    recipes.forEach(recipe => {
-        const recipeCard = createRecipeCard(recipe);
+    for (let i = 0; i < recipes.length; i++) {
+        const recipeCard = createRecipeCard(recipes[i]);
         cardsSection.appendChild(recipeCard);
-    });
+    }
 }
 
 
@@ -78,9 +78,9 @@ function createIngredientsContainer(ingredients) {
     const ingredientsContainer = document.createElement('div');
     ingredientsContainer.classList.add('ingredients-container');
 
-    ingredients.forEach(ingredient => {
-        ingredientsContainer.appendChild(createIngredientDetail(ingredient));
-    });
+    for (let i = 0; i < ingredients.length; i++) {
+        ingredientsContainer.appendChild(createIngredientDetail(ingredients[i]));
+    }
 
     return ingredientsContainer;
 }

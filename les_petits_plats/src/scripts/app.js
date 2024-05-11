@@ -1,9 +1,9 @@
 // app.js
-import { displayRecipes } from './cards.js';
-import { displayFilter } from './filter.js';
-import { sortCards } from './sort.js';
+import { displayRecipes } from '../templates/cards.js';
+import { displayFilter } from '../templates/filter.js';
+import { sortCards } from './filter.js';
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     displayFilter(displayRecipes);
-    sortCards(displayRecipes); 
+    sortCards(displayRecipes);
 });

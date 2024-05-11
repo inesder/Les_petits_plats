@@ -1,6 +1,6 @@
 export const filters = {
     search: '',
-    ingredient: '',
+    ingredients: [],
     appliance: '',
-    utensil: ''
+    ustensils: []
 };
