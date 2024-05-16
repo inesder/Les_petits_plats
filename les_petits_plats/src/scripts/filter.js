@@ -1,12 +1,14 @@
 // Importer les recettes et les filtres partagés
 import recipes from '../datas/recipes.js';
 import { filters } from '../models/state.js';
+import { displayFilter } from '../templates/filter.js';
+import { displayRecipes } from '../templates/cards.js';
 
 // Sélectionner l'élément d'entrée de recherche principal
 const searchInput = document.querySelector('.search-input');
 
 // Fonction pour appliquer les filtres et mettre à jour l'affichage des recettes
-export function applyFilters(displayFilteredRecipes) {
+export function applyFilters() {
     let tempFilteredRecipes = [...recipes]; // Initialiser avec toutes les recettes
 
     // Filtrer par recherche dans la barre principale
@@ -16,7 +18,7 @@ export function applyFilters(displayFilteredRecipes) {
         for (let i = 0; i < tempFilteredRecipes.length; i++) {
             let recipe = tempFilteredRecipes[i];
             let isMatch = recipe.description.toLowerCase().includes(filters.search) ||
-                          recipe.name.toLowerCase().includes(filters.search);
+                recipe.name.toLowerCase().includes(filters.search);
 
             // Vérifier si un des ingrédients correspond au terme de recherche
             for (let j = 0; j < recipe.ingredients.length; j++) {
@@ -114,38 +116,22 @@ export function applyFilters(displayFilteredRecipes) {
     }
 
     console.log('Recettes filtrées:', tempFilteredRecipes);  // Log pour vérifier les données filtrées
-    displayFilteredRecipes(tempFilteredRecipes);  // Mettre à jour l'affichage avec les recettes filtrées
+    displayFilter(tempFilteredRecipes);  // Mettre à jour l'affichage avec les recettes filtrées
+    displayRecipes(tempFilteredRecipes);
 }
 
+
 // Fonction pour gérer la recherche principale et les champs de recherche des filtres
-function handleSearch(displayFilteredRecipes) {
-    // Afficher toutes les recettes initialement
-    displayFilteredRecipes([...recipes]);
+function handleSearch() {
 
     // Ajouter un écouteur d'événement pour la barre de recherche principale
-    searchInput.addEventListener('input', function(event) {
+    searchInput.addEventListener('input', function (event) {
         filters.search = event.target.value.trim().toLowerCase();
-        applyFilters(displayFilteredRecipes);
-    });
-
-    // Ajouter des écouteurs d'événements pour les champs de recherche des filtres
-    document.getElementById('ingredient-search').addEventListener('input', function(event) {
-        filters.ingredientSearch = event.target.value.trim().toLowerCase();
-        applyFilters(displayFilteredRecipes);
-    });
-
-    document.getElementById('equipment-search').addEventListener('input', function(event) {
-        filters.applianceSearch = event.target.value.trim().toLowerCase();
-        applyFilters(displayFilteredRecipes);
-    });
-
-    document.getElementById('ustensil-search').addEventListener('input', function(event) {
-        filters.ustensilsearch = event.target.value.trim().toLowerCase();
-        applyFilters(displayFilteredRecipes);
+        applyFilters();
     });
 }
 
 // Fonction pour initier le tri et le filtrage des cartes de recettes
-export function filterCards(displayFilteredRecipes) {
-    handleSearch(displayFilteredRecipes);
+export function filterCards() {
+    handleSearch();
 }

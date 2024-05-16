@@ -2,6 +2,10 @@ import recipes from '../datas/recipes.js';
 import { filters } from '../models/state.js';  // Importer les filtres partagés
 import { applyFilters } from '../scripts/filter.js';  // Importer la fonction applyFilters
 
+const allIngredientItems = [];
+const allEquipmentItems = [];
+const allToolItems = [];
+
 // Fonction pour créer un champ de recherche
 function createSearchInput(id, onInput) {
     const inputGroup = document.createElement('div');
@@ -17,7 +21,18 @@ function createSearchInput(id, onInput) {
     searchInput.classList.add('form-control');
 
     // Ajout du gestionnaire d'événements pour l'entrée de recherche
-    searchInput.addEventListener('input', onInput);
+    searchInput.addEventListener('input', function (event) {
+        const searchTerm = event.target.value.trim().toLowerCase();
+        if (searchTerm.length >= 3) {
+            onInput(event);
+        } else {
+            // Si la longueur est inférieure à 3, mettreà jour le menu avec tous les éléments
+            const allItems = id === 'ingredient-search' ? allIngredientItems :
+                id === 'equipment-search' ? allEquipmentItems :
+                    allToolItems;
+            updateDropdownMenu(searchInput.closest('.dropdown-menu'), allItems);
+        }
+    });
 
     const searchButton = document.createElement('button');
     searchButton.type = 'button';
@@ -59,7 +74,7 @@ function createFilterButton(label) {
 }
 
 // Fonction pour créer un tag avec un bouton de suppression
-function createTag(tagText, filterType, displayFilteredRecipes) {
+function createTag(tagText, filterType) {
     const tag = document.createElement('div');
     tag.classList.add('tag');
     tag.textContent = tagText;
@@ -69,21 +84,14 @@ function createTag(tagText, filterType, displayFilteredRecipes) {
     closeButton.textContent = 'x';
 
     // Ajout du gestionnaire d'événements pour supprimer le tag et mettre à jour les filtres
-    closeButton.addEventListener('click', function() {
+    closeButton.addEventListener('click', function () {
         tag.remove();
         if (filterType === 'ingredients' || filterType === 'ustensils') {
-            // Mise à jour des filtres pour supprimer l'élément correspondant
-            const updatedFilters = [];
-            for (let i = 0; i < filters[filterType].length; i++) {
-                if (filters[filterType][i] !== tagText.toLowerCase()) {
-                    updatedFilters.push(filters[filterType][i]);
-                }
-            }
-            filters[filterType] = updatedFilters;
+            filters[filterType] = filters[filterType].filter(item => item !== tagText.toLowerCase());
         } else {
             filters[filterType] = '';
         }
-        applyFilters(displayFilteredRecipes);
+        applyFilters();
     });
 
     tag.appendChild(closeButton);
@@ -103,23 +111,39 @@ function filterDropdownItems(items, searchTerm) {
 
 // Fonction pour mettre à jour le menu déroulant avec les éléments filtrés
 function updateDropdownMenu(dropdownMenu, items) {
+    const searchInput = dropdownMenu.querySelector('.input-group');
+    const searchInputElement = searchInput.querySelector('input');
+    const searchValue = searchInputElement.value; // Conservez la valeur de l'input
+    const searchFocus = document.activeElement === searchInputElement; // Conservez le focus de l'input
+
     dropdownMenu.innerHTML = '';
+    dropdownMenu.prepend(searchInput); // Conservez l'input de recherche en place
     for (let i = 0; i < items.length; i++) {
         dropdownMenu.appendChild(items[i]);
+    }
+
+    // Restaurez la valeur et le focus de l'input après la mise à jour du menu
+    searchInputElement.value = searchValue;
+    if (searchFocus) {
+        searchInputElement.focus();
     }
 }
 
 // Fonction pour créer le bouton de filtre des ingrédients
-function createIngredientFilterButton(displayFilteredRecipes) {
+function createIngredientFilterButton(filteredRecipes) {
     const container = createFilterButton("Ingrédients");
     const dropdownMenu = container.querySelector('.dropdown-menu');
 
+    // Vider les éléments existants pour éviter les doublons
+    allIngredientItems.length = 0;
+    dropdownMenu.innerHTML = '';  // Assurez-vous de vider le menu déroulant également
+
     // Collecter les ingrédients uniques des recettes
     const ingredients = [];
-    for (let i = 0; i < recipes.length; i++) {
-        const recipe = recipes[i];
+    for (let i = 0; i < filteredRecipes.length; i++) {
+        const recipe = filteredRecipes[i];
         for (let j = 0; j < recipe.ingredients.length; j++) {
-            const ingredient = recipe.ingredients[j].ingredient;
+            const ingredient = recipe.ingredients[j].ingredient.toLowerCase();
             if (!ingredients.includes(ingredient)) {
                 ingredients.push(ingredient);
             }
@@ -127,7 +151,6 @@ function createIngredientFilterButton(displayFilteredRecipes) {
     }
 
     // Créer les éléments de menu pour chaque ingrédient
-    const allIngredientItems = [];
     for (let i = 0; i < ingredients.length; i++) {
         const ingredient = ingredients[i];
         const item = document.createElement('a');
@@ -136,31 +159,41 @@ function createIngredientFilterButton(displayFilteredRecipes) {
         item.textContent = ingredient;
 
         // Ajout du gestionnaire d'événements pour mettre à jour les filtres et créer un tag
-        item.addEventListener('click', function() {
-            filters.ingredients.push(ingredient.toLowerCase());
-            applyFilters(displayFilteredRecipes);
-            createTag(ingredient, 'ingredients', displayFilteredRecipes);
+        item.addEventListener('click', function () {
+            if (!filters.ingredients.includes(ingredient.toLowerCase())) {
+                filters.ingredients.push(ingredient.toLowerCase());
+                applyFilters();
+                createTag(ingredient, 'ingredients');
+            }
         });
         allIngredientItems.push(item);
     }
 
-    // Mettre à jour le menu déroulant avec tous les ingrédients
-    updateDropdownMenu(dropdownMenu, allIngredientItems);
+    // Ajouter le champ de recherche dans le menu déroulant et le mettre à jour
+    const searchInput = createSearchInput('ingredient-search', function (event) {
+        const searchTerm = event.target.value.trim().toLowerCase();
+        if (searchTerm.length >= 3) {
+            const filteredItems = filterDropdownItems(allIngredientItems, searchTerm);
+            updateDropdownMenu(dropdownMenu, filteredItems);
+        } else {
+            updateDropdownMenu(dropdownMenu, allIngredientItems);
+        }
+    });
 
-    // Ajouter le champ de recherche dans le menu déroulant
-    dropdownMenu.appendChild(createSearchInput('ingredient-search', function(event) {
-        const searchTerm = event.target.value;
-        const filteredItems = filterDropdownItems(allIngredientItems, searchTerm);
-        updateDropdownMenu(dropdownMenu, filteredItems);
-    }));
+    dropdownMenu.prepend(searchInput);
+    updateDropdownMenu(dropdownMenu, allIngredientItems);
 
     return container;
 }
 
+
 // Fonction pour créer le bouton de filtre des appareils
-function createEquipmentFilterButton(displayFilteredRecipes) {
+function createEquipmentFilterButton() {
     const container = createFilterButton("Appareils");
     const dropdownMenu = container.querySelector('.dropdown-menu');
+
+    allEquipmentItems.length = 0;
+    dropdownMenu.innerHTML = '';
 
     // Collecter les appareils uniques des recettes
     const equipment = [];
@@ -172,40 +205,50 @@ function createEquipmentFilterButton(displayFilteredRecipes) {
     }
 
     // Créer les éléments de menu pour chaque appareil
-    const allEquipmentItems = [];
+
     for (let i = 0; i < equipment.length; i++) {
         const item = equipment[i];
         const link = document.createElement('a');
         link.classList.add('dropdown-item');
         link.href = "#";
-        link.textContent = item;
+        link.textContent = item.toLowerCase();
 
         // Ajout du gestionnaire d'événements pour mettre à jour les filtres et créer un tag
-        link.addEventListener('click', function() {
-            filters.appliance = item.toLowerCase();
-            applyFilters(displayFilteredRecipes);
-            createTag(item, 'appliance', displayFilteredRecipes);
+        link.addEventListener('click', function () {
+            const applianceLowerCase = item.toLowerCase();
+            if (filters.appliance !== applianceLowerCase) {
+                filters.appliance = applianceLowerCase;
+                applyFilters();
+                createTag(item, 'appliance');
+            }
         });
         allEquipmentItems.push(link);
     }
 
-    // Mettre à jour le menu déroulant avec tous les appareils
-    updateDropdownMenu(dropdownMenu, allEquipmentItems);
-
     // Ajouter le champ de recherche dans le menu déroulant
-    dropdownMenu.appendChild(createSearchInput('equipment-search', function(event) {
-        const searchTerm = event.target.value;
-        const filteredItems = filterDropdownItems(allEquipmentItems, searchTerm);
-        updateDropdownMenu(dropdownMenu, filteredItems);
-    }));
+    const searchInput = createSearchInput('equipment-search', function (event) {
+        const searchTerm = event.target.value.trim().toLowerCase();
+        if (searchTerm.length >= 3) {
+            const filteredItems = filterDropdownItems(allEquipmentItems, searchTerm);
+            updateDropdownMenu(dropdownMenu, filteredItems);
+        } else {
+            updateDropdownMenu(dropdownMenu, allEquipmentItems);
+        }
+    });
+
+    dropdownMenu.prepend(searchInput);
+    updateDropdownMenu(dropdownMenu, allEquipmentItems);
 
     return container;
 }
 
 // Fonction pour créer le bouton de filtre des ustensiles
-function createToolFilterButton(displayFilteredRecipes) {
+function createToolFilterButton() {
     const container = createFilterButton("Ustensiles");
     const dropdownMenu = container.querySelector('.dropdown-menu');
+
+    allToolItems.length = 0;
+    dropdownMenu.innerHTML = '';
 
     // Collecter les ustensiles uniques des recettes
     const tools = [];
@@ -220,7 +263,7 @@ function createToolFilterButton(displayFilteredRecipes) {
     }
 
     // Créer les éléments de menu pour chaque ustensile
-    const allToolItems = [];
+
     for (let i = 0; i < tools.length; i++) {
         const tool = tools[i];
         const link = document.createElement('a');
@@ -229,45 +272,64 @@ function createToolFilterButton(displayFilteredRecipes) {
         link.textContent = tool;
 
         // Ajout du gestionnaire d'événements pour mettre à jour les filtres et créer un tag
-        link.addEventListener('click', function() {
-            filters.ustensils.push(tool.toLowerCase());
-            applyFilters(displayFilteredRecipes);
-            createTag(tool, 'ustensils', displayFilteredRecipes);
+        link.addEventListener('click', function () {
+            if (!filters.ustensils.includes(tool.toLowerCase())) {
+                filters.ustensils.push(tool.toLowerCase());
+                applyFilters();
+                createTag(tool, 'ustensils');
+            }
         });
         allToolItems.push(link);
     }
 
-    // Mettre à jour le menu déroulant avec tous les ustensiles
-    updateDropdownMenu(dropdownMenu, allToolItems);
-
     // Ajouter le champ de recherche dans le menu déroulant
-    dropdownMenu.appendChild(createSearchInput('ustensil-search', function(event) {
-        const searchTerm = event.target.value;
-        const filteredItems = filterDropdownItems(allToolItems, searchTerm);
-        updateDropdownMenu(dropdownMenu, filteredItems);
-    }));
+    const searchInput = createSearchInput('ustensil-search', function (event) {
+        const searchTerm = event.target.value.trim().toLowerCase();
+        if (searchTerm.length >= 3) {
+            const filteredItems = filterDropdownItems(allToolItems, searchTerm);
+            updateDropdownMenu(dropdownMenu, filteredItems);
+        } else {
+            updateDropdownMenu(dropdownMenu, allToolItems);
+        }
+    });
+
+    dropdownMenu.prepend(searchInput);
+    updateDropdownMenu(dropdownMenu, allToolItems);
 
     return container;
 }
 
 // Fonction principale pour afficher les filtres
-export function displayFilter(displayFilteredRecipes) {
+export function displayFilter(filteredRecipes) {
     const filtersSection = document.querySelector('.filters-section');
-    const filtersContainer = document.createElement('div');
-    filtersContainer.classList.add("filters-container");
-    filtersSection.appendChild(filtersContainer); 
-    
-    const tagsContainer = document.createElement('div');
-    tagsContainer.classList.add('tags-container');
-    filtersSection.insertBefore(tagsContainer, filtersContainer);
+
+    let filtersContainer = document.querySelector('.filters-container');
+    let tagsContainer = document.querySelector('.tags-container');
+
+    // Créer le conteneur de filtres s'il n'existe pas déjà
+    if (!filtersContainer) {
+        filtersContainer = document.createElement('div');
+        filtersContainer.classList.add("filters-container");
+        filtersSection.appendChild(filtersContainer);
+    } else {
+        filtersContainer.innerHTML = ''; // Nettoyer uniquement le conteneur de filtres
+    }
+
+    // Créer le conteneur de tags s'il n'existe pas déjà
+    if (!tagsContainer) {
+        tagsContainer = document.createElement('div');
+        tagsContainer.classList.add('tags-container');
+        filtersSection.insertBefore(tagsContainer, filtersContainer);
+    }
 
     // Créer les boutons de filtre pour les ingrédients, les appareils et les ustensiles
-    const ingredientFilter = createIngredientFilterButton(displayFilteredRecipes);
-    const equipmentFilter = createEquipmentFilterButton(displayFilteredRecipes);
-    const toolFilter = createToolFilterButton(displayFilteredRecipes);
+    const ingredientFilter = createIngredientFilterButton(filteredRecipes);
+    const equipmentFilter = createEquipmentFilterButton(filteredRecipes);
+    const toolFilter = createToolFilterButton(filteredRecipes);
 
     // Ajouter les boutons de filtre au conteneur de filtres
     filtersContainer.appendChild(ingredientFilter);
     filtersContainer.appendChild(equipmentFilter);
     filtersContainer.appendChild(toolFilter);
 }
+
