@@ -87,7 +87,13 @@ function createTag(tagText, filterType) {
     closeButton.addEventListener('click', function () {
         tag.remove();
         if (filterType === 'ingredients' || filterType === 'ustensils') {
-            filters[filterType] = filters[filterType].filter(item => item !== tagText.toLowerCase());
+            const updatedFilters = [];
+            for (let i = 0; i < filters[filterType].length; i++) {
+                if (filters[filterType][i] !== tagText.toLowerCase()) {
+                    updatedFilters.push(filters[filterType][i]);
+                }
+            }
+            filters[filterType] = updatedFilters;
         } else {
             filters[filterType] = '';
         }
@@ -136,7 +142,7 @@ function createIngredientFilterButton(filteredRecipes) {
 
     // Vider les éléments existants pour éviter les doublons
     allIngredientItems.length = 0;
-    dropdownMenu.innerHTML = '';  // Assurez-vous de vider le menu déroulant également
+    dropdownMenu.innerHTML = '';  // Vider le menu déroulant également
 
     // Collecter les ingrédients uniques des recettes
     const ingredients = [];
