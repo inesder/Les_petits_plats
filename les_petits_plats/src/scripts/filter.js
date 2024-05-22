@@ -9,14 +9,14 @@ const searchInput = document.querySelector('.search-input');
 
 // Fonction pour appliquer les filtres et mettre à jour l'affichage des recettes
 export function applyFilters() {
-    let tempFilteredRecipes = [...recipes]; // Initialiser avec toutes les recettes
+    let filteredRecipes = [...recipes]; // Initialiser avec toutes les recettes
 
     // Filtrer par recherche dans la barre principale
     if (filters.search.length >= 3) {
         let filteredBySearch = [];
         // Parcourir toutes les recettes pour vérifier les correspondances avec le terme de recherche
-        for (let i = 0; i < tempFilteredRecipes.length; i++) {
-            let recipe = tempFilteredRecipes[i];
+        for (let i = 0; i < filteredRecipes.length; i++) {
+            let recipe = filteredRecipes[i];
             let isMatch = recipe.description.toLowerCase().includes(filters.search) ||
                 recipe.name.toLowerCase().includes(filters.search);
 
@@ -34,15 +34,15 @@ export function applyFilters() {
             }
         }
         // Mettre à jour la liste des recettes filtrées
-        tempFilteredRecipes = filteredBySearch;
+        filteredRecipes = filteredBySearch;
     }
 
     // Filtrer par ingrédient
     if (filters.ingredients.length > 0) {
         let filteredByIngredient = [];
         // Parcourir toutes les recettes pour vérifier les correspondances avec les ingrédients sélectionnés
-        for (let i = 0; i < tempFilteredRecipes.length; i++) {
-            let recipe = tempFilteredRecipes[i];
+        for (let i = 0; i < filteredRecipes.length; i++) {
+            let recipe = filteredRecipes[i];
             let matchesAllIngredients = true;
             // Parcourir tous les ingrédients sélectionnés
             for (let k = 0; k < filters.ingredients.length; k++) {
@@ -66,29 +66,29 @@ export function applyFilters() {
             }
         }
         // Mettre à jour la liste des recettes filtrées
-        tempFilteredRecipes = filteredByIngredient;
+        filteredRecipes = filteredByIngredient;
     }
 
     // Filtrer par appareil
     if (filters.appliance) {
         let filteredByAppliance = [];
         // Parcourir toutes les recettes pour vérifier les correspondances avec l'appareil sélectionné
-        for (let i = 0; i < tempFilteredRecipes.length; i++) {
-            let recipe = tempFilteredRecipes[i];
+        for (let i = 0; i < filteredRecipes.length; i++) {
+            let recipe = filteredRecipes[i];
             if (recipe.appliance.toLowerCase().includes(filters.appliance)) {
                 filteredByAppliance.push(recipe);
             }
         }
         // Mettre à jour la liste des recettes filtrées
-        tempFilteredRecipes = filteredByAppliance;
+        filteredRecipes = filteredByAppliance;
     }
 
     // Filtrer par ustensile
     if (filters.ustensils.length > 0) {
         let filteredByUstensil = [];
         // Parcourir toutes les recettes pour vérifier les correspondances avec les ustensiles sélectionnés
-        for (let i = 0; i < tempFilteredRecipes.length; i++) {
-            let recipe = tempFilteredRecipes[i];
+        for (let i = 0; i < filteredRecipes.length; i++) {
+            let recipe = filteredRecipes[i];
             let matchesAllustensils = true;
             // Parcourir tous les ustensiles sélectionnés
             for (let k = 0; k < filters.ustensils.length; k++) {
@@ -112,12 +112,12 @@ export function applyFilters() {
             }
         }
         // Mettre à jour la liste des recettes filtrées
-        tempFilteredRecipes = filteredByUstensil;
+        filteredRecipes = filteredByUstensil;
     }
 
-    console.log('Recettes filtrées:', tempFilteredRecipes);  // Log pour vérifier les données filtrées
-    displayFilter(tempFilteredRecipes);  // Mettre à jour l'affichage avec les recettes filtrées
-    displayRecipes(tempFilteredRecipes);
+    console.log('Recettes filtrées:', filteredRecipes);  // Log pour vérifier les données filtrées
+    displayFilter(filteredRecipes);  // Mettre à jour l'affichage avec les recettes filtrées
+    displayRecipes(filteredRecipes);
 }
 
 

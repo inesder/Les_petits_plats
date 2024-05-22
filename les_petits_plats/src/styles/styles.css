@@ -177,6 +177,7 @@ h1, h2, h3 {
     border-radius: 11px;
     width: 200px;
     padding: 17px 5px;
+    font-size: 16px;
 }
 
 .btn.focus, .btn:focus {
@@ -184,16 +185,17 @@ h1, h2, h3 {
  }
 
 .dropdown-toggle::after {
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 .dropdown-menu {
-    transform: none !important;  
+    transform: none !important;
+    font-size: 14px;  
 }
 
 .dropdown-menu.show {
     transform: none !important;
-    width: 200px;
+    width: 280px;
     top:90% !important;  
 }
 
