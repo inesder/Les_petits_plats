@@ -139,6 +139,7 @@ h1, h2, h3 {
 
 .filters-section{
     display: flex;
+    flex-direction: column-reverse;
     padding-left: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -146,7 +147,7 @@ h1, h2, h3 {
     justify-content: space-between;
     width: 81%;
     margin: 0 auto;
-    align-items: center;
+    align-items: start;
 }
 
 .filters-container{
@@ -176,6 +177,7 @@ h1, h2, h3 {
     border-radius: 11px;
     width: 200px;
     padding: 17px 5px;
+    font-size: 16px;
 }
 
 .btn.focus, .btn:focus {
@@ -183,15 +185,74 @@ h1, h2, h3 {
  }
 
 .dropdown-toggle::after {
-    margin-left: 50px;
+    margin-left: 70px;
 }
 
 .dropdown-menu {
-    transform: none !important;  // Surcharge pour éviter les transformations non désirées
+    transform: none !important;
+    font-size: 14px;  
 }
 
 .dropdown-menu.show {
     transform: none !important;
+    width: 280px;
+    top:90% !important;  
+}
+
+.tags-container{
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+}
+
+.tag {
+    background-color: #FFD15B;
+    ;
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 200px;
-    top:90% !important;  // Assurez-vous que cela positionne correctement le menu juste en dessous du bouton
+    font-size:14px;
+    font-weight: 400;
+    height: 53px;
+}
+
+.tag-close {
+    cursor: pointer;
+    padding: 0 5px;
+    font-weight: 500;
+    font-size: 20px
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+.form-outline {
+width: 150px; 
+}
+
+.form-control {
+    margin-left: 5px;
+
+}
+
+.form-control:focus{
+    box-shadow: none;
+    border-color: #ced4da;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #ced4da;
+    border-color: #ced4da;
+    border-left: none;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    color: #ced4da;
+    border-color: #ced4da;
+    border-left: none;
 }

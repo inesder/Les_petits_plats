@@ -1,4 +1,3 @@
-// Définition de l'objet de filtre partagé
 // Cet objet contient les filtres appliqués aux recettes, qui peuvent être mis à jour dynamiquement.
 export const filters = {
     search: '',        // Chaîne de recherche pour le filtre principal
