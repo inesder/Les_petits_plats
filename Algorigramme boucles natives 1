@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-03T21:31:52.246Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="9QGdqMXmKn-WoYev8Pvn" version="24.4.13" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-03T21:46:33.294Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="4XFvAMbwbx7MJeQbLJX6" version="24.4.13" type="github">
   <diagram name="Page-1" id="VOcanAQc5JdmA1qy7nuI">
     <mxGraphModel dx="1678" dy="884" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="#FFFFFF" math="0" shadow="0">
       <root>
@@ -7,8 +7,8 @@
         <mxCell id="J1Xql54BsoYDIprcBaNs-323" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-57" target="J1Xql54BsoYDIprcBaNs-59">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-57" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Initialiser la liste des&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;background-color: initial; font-size: 16px;&quot;&gt;recettes&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;filtrées avec&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;toutes les recettes&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="6.76" y="179" width="293.16" height="61" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-57" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Initialiser la liste des&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;background-color: initial; font-size: 20px;&quot;&gt;recettes&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;filtrées avec&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;toutes les recettes&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1.7599999999999998" y="181.09" width="303.24" height="71" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-324" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-59" target="J1Xql54BsoYDIprcBaNs-125">
           <mxGeometry relative="1" as="geometry" />
@@ -28,22 +28,22 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-59" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Le mot-clé de recherche&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp;est il&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;background-color: initial; font-size: 16px;&quot;&gt;inférieur ou égal&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;à&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;3 caractères ?&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="62.60999999999999" y="260" width="183.09" height="120" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-59" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Le mot-clé de recherche&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp;est il&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;background-color: initial; font-size: 20px;&quot;&gt;inférieur ou égal&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;à&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;3 caractères ?&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="45.9" y="277.08000000000004" width="214.89" height="140.84" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-318" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-108" target="J1Xql54BsoYDIprcBaNs-57">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-108" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Entrée de la recherche principale par l&#39;utilisateur&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="29.19" y="110" width="248.31" height="40" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-108" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Entrée de la recherche principale par l&#39;utilisateur&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="22.94" y="110" width="260.81" height="50" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-313" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-109" target="J1Xql54BsoYDIprcBaNs-108">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-109" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Début&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+        <mxCell id="J1Xql54BsoYDIprcBaNs-109" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Début&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="103.36" y="50" width="99.97" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-119" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1">
+        <mxCell id="J1Xql54BsoYDIprcBaNs-119" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-398">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="590" y="1050" as="sourcePoint" />
             <mxPoint x="720" y="1050" as="targetPoint" />
@@ -58,8 +58,8 @@
         <mxCell id="J1Xql54BsoYDIprcBaNs-329" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-125" target="J1Xql54BsoYDIprcBaNs-328">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-125" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Parcourir les recettes&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="305" y="305" width="173.24" height="30" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-125" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Parcourir les recettes&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="325" y="325" width="185" height="45" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-135" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -70,8 +70,8 @@
         <mxCell id="J1Xql54BsoYDIprcBaNs-438" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-326" target="J1Xql54BsoYDIprcBaNs-346">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-326" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Ajouter les recettes correspondantes à une nouvelle liste de recettes filtrées&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="770.47" y="295.78000000000003" width="289.53" height="48.45" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-326" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Ajouter les recettes correspondantes à une nouvelle liste de recettes filtrées&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="843.3" y="310" width="316.7" height="76.73" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-437" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-328" target="J1Xql54BsoYDIprcBaNs-326">
           <mxGeometry relative="1" as="geometry" />
@@ -81,23 +81,23 @@
             <mxPoint y="4" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-328" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Le mot clé est-il présent dans le titre, la description ou les ingrédients de chaque recette ?&amp;nbsp;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="515" y="252.09" width="207.25" height="135.83" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-328" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Le mot clé est-il présent dans le titre, la description ou les ingrédients de chaque recette ?&amp;nbsp;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="539.98" y="268.64000000000004" width="240.63" height="157.71" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-440" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-346" target="J1Xql54BsoYDIprcBaNs-348">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-346" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Mettre à jour l&#39;affichage des recettes pour l&#39;utilisateur&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="1080.94" y="295.78000000000003" width="279.06" height="48.45" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-346" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Mettre à jour l&#39;affichage des recettes pour l&#39;utilisateur&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="324.14000000000004" width="279.06" height="48.45" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-348" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Mettre à jour les listes d&#39;ingrédients, d&#39;appareils et d&#39;ustensiles basées sur les recettes filtrées&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="1083.9" y="400" width="275.1" height="70" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-348" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Mettre à jour les listes d&#39;ingrédients, d&#39;appareils et d&#39;ustensiles basées sur les recettes filtrées&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1190.52" y="400" width="298.02" height="110" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-359" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-350" target="J1Xql54BsoYDIprcBaNs-358">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-350" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Entrée de la recherche dans le menu déroulant des ingrédients par l&#39;utilisateur&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="29.18" y="423" width="250.82" height="67" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-350" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Entrée de la recherche dans le menu déroulant des ingrédients par l&#39;utilisateur&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="27.93" y="455.54" width="252.07" height="84.46" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-362" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-358" target="J1Xql54BsoYDIprcBaNs-361">
           <mxGeometry relative="1" as="geometry" />
@@ -107,14 +107,14 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-358" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Le mot-clé de recherche&amp;nbsp;&lt;/font&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp;est il&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;background-color: initial; font-size: 16px;&quot;&gt;inférieur ou égal&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;à&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;3 caractères ?&lt;/font&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="57.769999999999996" y="518.08" width="193.64" height="126.91" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-358" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Le mot-clé de recherche&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp;est il&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;background-color: initial; font-size: 20px;&quot;&gt;inférieur ou égal&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;à&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;3 caractères ?&lt;/font&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="41.26" y="573.09" width="224.16" height="146.91" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-366" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-361" target="J1Xql54BsoYDIprcBaNs-365">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-361" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Parcourir les ingrédients&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="310.76" y="566.17" width="179.24" height="33.83" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-361" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Parcourir les ingrédients&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="325.82" y="621.36" width="189.18" height="50.37" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-448" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-365" target="J1Xql54BsoYDIprcBaNs-367">
           <mxGeometry relative="1" as="geometry" />
@@ -124,26 +124,26 @@
             <mxPoint x="5" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-365" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Le mot clé est-il présent dans les ingrédients ?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="524.1600000000001" y="522.54" width="183.09" height="120" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-365" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Le mot clé est-il présent dans les ingrédients ?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="542.09" y="586.55" width="183.09" height="120" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-452" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-367" target="J1Xql54BsoYDIprcBaNs-371">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-367" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Mise à jour de la liste d&#39;ingrédients affichée dans le menu déroulant avec les termes correspondants&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="759.97" y="547.3" width="280.03" height="68.47" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-367" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Mise à jour de la liste d&#39;ingrédients affichée dans le menu déroulant avec les termes correspondants&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="780.61" y="597.6999999999999" width="294.78" height="97.69" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-374" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-371" target="J1Xql54BsoYDIprcBaNs-373">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-371" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;L&#39;utilisateur sélectionne un ingrédient dans la liste mise à jour&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="1070.47" y="555.58" width="289.53" height="54.42" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-371" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;L&#39;utilisateur sélectionne un ingrédient dans la liste mise à jour&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1119.48" y="611.22" width="310.28" height="70.67" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-376" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-373" target="J1Xql54BsoYDIprcBaNs-375">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-373" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Un tag est créé avec l&#39;ingrédient sélectionné&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="1080.61" y="640" width="269.25" height="60" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-373" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Un tag est créé avec l&#39;ingrédient sélectionné&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1140" y="720" width="269.25" height="60" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-378" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-375" target="J1Xql54BsoYDIprcBaNs-377">
           <mxGeometry relative="1" as="geometry" />
@@ -153,26 +153,26 @@
             <mxPoint x="-6" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-375" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;L&#39;ingrédient sélectionné existe-t-il dans le tableau des recettes filtrées?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="1108.6" y="734.48" width="213.27" height="139.78" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-375" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;L&#39;ingrédient sélectionné existe-t-il dans le tableau des recettes filtrées?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1155.45" y="812.36" width="238.34" height="156.21" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-385" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-377" target="J1Xql54BsoYDIprcBaNs-384">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-377" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Mettre à jour&amp;nbsp;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;font-family: ui-sans-serif, -apple-system, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, Helvetica, &amp;quot;Apple Color Emoji&amp;quot;, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; text-align: left; white-space-collapse: preserve;&quot;&gt;l&lt;/span&gt;&lt;span style=&quot;font-family: ui-sans-serif, -apple-system, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, Helvetica, &amp;quot;Apple Color Emoji&amp;quot;, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; text-align: left; white-space-collapse: preserve;&quot;&gt;a liste de recettes affichées pour l&#39;utilisateur avec les recettes correspondantes.&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="722.25" y="768.52" width="270" height="71.7" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-377" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Mettre à jour&amp;nbsp;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;font-family: ui-sans-serif, -apple-system, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, Helvetica, &amp;quot;Apple Color Emoji&amp;quot;, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; text-align: left; white-space-collapse: preserve;&quot;&gt;l&lt;/span&gt;&lt;span style=&quot;font-family: ui-sans-serif, -apple-system, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, Helvetica, &amp;quot;Apple Color Emoji&amp;quot;, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; text-align: left; white-space-collapse: preserve;&quot;&gt;a liste de recettes affichées pour l&#39;utilisateur avec les recettes correspondantes.&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="762.11" y="839.73" width="287.75" height="101.48" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-443" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-381" target="J1Xql54BsoYDIprcBaNs-395">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-381" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Entrée de la recherche dans le menu déroulant des appareils par l&#39;utilisateur&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="24.59" y="773.41" width="260" height="61.92" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-381" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Entrée de la recherche dans le menu déroulant des appareils par l&#39;utilisateur&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="45.9" y="850.22" width="264.1" height="80.49" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-386" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-384" target="J1Xql54BsoYDIprcBaNs-381">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-384" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Mettre à jour les listes d&#39;ingrédients, d&#39;appareils et d&#39;ustensiles basées sur les recettes filtrées&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="340" y="766.5" width="280" height="75.75" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-384" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Mettre à jour les listes d&#39;ingrédients, d&#39;appareils et d&#39;ustensiles basées sur les recettes filtrées&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="414" y="833.72" width="280" height="113.5" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-391" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -188,14 +188,14 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-395" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Le mot-clé de recherche&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp;est il&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;background-color: initial; font-size: 16px;&quot;&gt;inférieur ou égal&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;à&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;3 caractères ?&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="58.23" y="874.26" width="191.85" height="125.74" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-395" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Le mot-clé de recherche&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp;est il&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;background-color: initial; font-size: 20px;&quot;&gt;inférieur ou égal&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;à&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;3 caractères ?&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="63.52" y="970.22" width="228.86" height="150" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-396" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-397" target="J1Xql54BsoYDIprcBaNs-398">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-397" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Parcourir les appareils&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="310.76" y="922.13" width="173.24" height="30" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-397" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Parcourir les appareils&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="345" y="1016.9800000000001" width="200" height="54.67" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-445" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-398" target="J1Xql54BsoYDIprcBaNs-400">
           <mxGeometry relative="1" as="geometry" />
@@ -205,26 +205,23 @@
             <mxPoint x="12" y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-398" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Le mot clé est-il présent dans les appareils ?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="527.08" y="879.0400000000001" width="177.25" height="116.17" as="geometry" />
-        </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-399" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-400" target="J1Xql54BsoYDIprcBaNs-404">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-400" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Mise à jour de la liste d&#39;appareils affichée dans le menu déroulant avec les termes correspondants&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="770.28" y="905.69" width="279.25" height="62.88" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-400" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Mise à jour de la liste d&#39;appareils affichée dans le menu déroulant avec les termes correspondants&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="823.61" y="1001.66" width="303" height="87.12" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-403" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-404" target="J1Xql54BsoYDIprcBaNs-406">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-404" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;L&#39;utilisateur sélectionne un appareil dans la liste mise à jour&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="1087.18" y="910.7" width="256.1" height="52.87" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-404" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;L&#39;utilisateur sélectionne un appareil dans la liste mise à jour&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="1009.16" width="290" height="72.12" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-405" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-406" target="J1Xql54BsoYDIprcBaNs-408">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-406" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Un tag est créé avec l&#39;appareil sélectionné&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="1080.61" y="995.21" width="269.25" height="60" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-406" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Un tag est créé avec l&#39;appareil sélectionné&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1170.37" y="1124.04" width="269.25" height="60" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-407" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-408" target="J1Xql54BsoYDIprcBaNs-410">
           <mxGeometry relative="1" as="geometry" />
@@ -234,26 +231,26 @@
             <mxPoint x="-9" y="3" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-408" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;L&#39;appareil sélectionné existe-t-il dans le tableau des recettes filtrées?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="1126.61" y="1080" width="177.25" height="116.17" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-408" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;L&#39;appareil sélectionné existe-t-il dans le tableau des recettes filtrées?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1192.03" y="1221.92" width="225.94" height="148.08" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-444" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-410" target="J1Xql54BsoYDIprcBaNs-412">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-410" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Mettre à jour&amp;nbsp;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;font-family: ui-sans-serif, -apple-system, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, Helvetica, &amp;quot;Apple Color Emoji&amp;quot;, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; text-align: left; white-space-collapse: preserve;&quot;&gt;l&lt;/span&gt;&lt;span style=&quot;font-family: ui-sans-serif, -apple-system, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, Helvetica, &amp;quot;Apple Color Emoji&amp;quot;, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; text-align: left; white-space-collapse: preserve;&quot;&gt;a liste de recettes affichées pour l&#39;utilisateur avec les recettes correspondantes.&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="780.61" y="1108.08" width="269.25" height="60" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-410" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Mettre à jour&amp;nbsp;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;font-family: ui-sans-serif, -apple-system, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, Helvetica, &amp;quot;Apple Color Emoji&amp;quot;, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; text-align: left; white-space-collapse: preserve;&quot;&gt;l&lt;/span&gt;&lt;span style=&quot;font-family: ui-sans-serif, -apple-system, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, Helvetica, &amp;quot;Apple Color Emoji&amp;quot;, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; text-align: left; white-space-collapse: preserve;&quot;&gt;a liste de recettes affichées pour l&#39;utilisateur avec les recettes correspondantes.&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="811.25" y="1245.46" width="285" height="101" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-414" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-412" target="J1Xql54BsoYDIprcBaNs-413">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-412" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Mettre à jour les listes d&#39;ingrédients, d&#39;appareils et d&#39;ustensiles basées sur les recettes filtrées&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="450" y="1108.08" width="269.25" height="60" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-412" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Mettre à jour les listes d&#39;ingrédients, d&#39;appareils et d&#39;ustensiles basées sur les recettes filtrées&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="435.18" y="1248.94" width="290" height="94.04" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-435" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-413" target="J1Xql54BsoYDIprcBaNs-419">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-413" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Entrée de la recherche dans le menu déroulant des ustensiles par l&#39;utilisateur&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="40" y="1103.08" width="280.82" height="70" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-413" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Entrée de la recherche dans le menu déroulant des ustensiles par l&#39;utilisateur&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="45.9" y="1251.44" width="290" height="89.04" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-417" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-419" target="J1Xql54BsoYDIprcBaNs-421">
           <mxGeometry relative="1" as="geometry" />
@@ -263,14 +260,14 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-419" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;Le mot-clé de recherche&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&amp;nbsp;est il&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;background-color: initial; font-size: 16px;&quot;&gt;inférieur ou égal&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;à&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;3 caractères ?&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="91.79000000000002" y="1251.9100000000003" width="177.25" height="116.17" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-419" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Le mot-clé de recherche&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;&amp;nbsp;est il&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;background-color: initial; font-size: 20px;&quot;&gt;inférieur ou égal&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;à&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;3 caractères ?&amp;nbsp;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="78.38000000000001" y="1380" width="225.04" height="147.49" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-420" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-421" target="J1Xql54BsoYDIprcBaNs-422">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-421" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Parcourir les ustensiles&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="325" y="1287.5" width="190" height="45" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-421" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Parcourir les ustensiles&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="380.09" y="1424.3700000000001" width="200" height="58.76" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-454" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-422" target="J1Xql54BsoYDIprcBaNs-424">
           <mxGeometry relative="1" as="geometry" />
@@ -280,47 +277,61 @@
             <mxPoint x="2" y="2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-422" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Le mot clé est-il présent dans les ustensiles ?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="545" y="1251.91" width="180.18" height="118.09" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-422" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Le mot clé est-il présent dans les ustensiles ?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="620" y="1394.7" width="180.18" height="118.09" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-423" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-424" target="J1Xql54BsoYDIprcBaNs-428">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-424" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Mise à jour de la liste d&#39;ustensiles affichée dans le menu déroulant avec les termes correspondants&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="780.61" y="1275.95" width="284.72" height="70.01" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-424" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Mise à jour de la liste d&#39;ustensiles affichée dans le menu déroulant avec les termes correspondants&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="860" y="1414.38" width="324.72" height="78.75" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-427" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-428" target="J1Xql54BsoYDIprcBaNs-430">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-428" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;L&#39;utilisateur sélectionne un ustensiles dans la liste mise à jour&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
-          <mxGeometry x="1097.3000000000002" y="1290" width="248.31" height="40" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-428" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;L&#39;utilisateur sélectionne un ustensiles dans la liste mise à jour&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1215.37" y="1416.88" width="284.63" height="76.25" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-429" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-430" target="J1Xql54BsoYDIprcBaNs-432">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-430" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Un tag est créé avec l&#39;ustensile sélectionné&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="1086.8300000000002" y="1360" width="269.25" height="60" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-430" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Un tag est créé avec l&#39;ustensile sélectionné&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1223.0600000000002" y="1527.49" width="269.25" height="60" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-431" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-432" target="J1Xql54BsoYDIprcBaNs-434">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-432" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;L&#39;ustensile sélectionné existe-t-il dans le tableau des recettes filtrées?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
-          <mxGeometry x="1132.83" y="1453.09" width="177.25" height="116.17" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-473" value="OUI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=1" vertex="1" connectable="0" parent="J1Xql54BsoYDIprcBaNs-431">
+          <mxGeometry x="-0.1702" y="-3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J1Xql54BsoYDIprcBaNs-432" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;L&#39;ustensile sélectionné existe-t-il dans le tableau des recettes filtrées?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="1243.25" y="1630" width="228.87" height="150" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-457" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="J1Xql54BsoYDIprcBaNs-434" target="J1Xql54BsoYDIprcBaNs-436">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-434" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Mettre à jour&amp;nbsp;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;font-family: ui-sans-serif, -apple-system, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, Helvetica, &amp;quot;Apple Color Emoji&amp;quot;, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; text-align: left; white-space-collapse: preserve;&quot;&gt;l&lt;/span&gt;&lt;span style=&quot;font-family: ui-sans-serif, -apple-system, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, Helvetica, &amp;quot;Apple Color Emoji&amp;quot;, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; text-align: left; white-space-collapse: preserve;&quot;&gt;a liste de recettes affichées pour l&#39;utilisateur avec les recettes correspondantes.&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="827" y="1481.17" width="269.25" height="60" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-434" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Mettre à jour&amp;nbsp;&lt;font style=&quot;font-size: 20px;&quot;&gt;&lt;span style=&quot;font-family: ui-sans-serif, -apple-system, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, Helvetica, &amp;quot;Apple Color Emoji&amp;quot;, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; text-align: left; white-space-collapse: preserve;&quot;&gt;l&lt;/span&gt;&lt;span style=&quot;font-family: ui-sans-serif, -apple-system, system-ui, &amp;quot;Segoe UI&amp;quot;, Roboto, Ubuntu, Cantarell, &amp;quot;Noto Sans&amp;quot;, sans-serif, Helvetica, &amp;quot;Apple Color Emoji&amp;quot;, Arial, &amp;quot;Segoe UI Emoji&amp;quot;, &amp;quot;Segoe UI Symbol&amp;quot;; text-align: left; white-space-collapse: preserve;&quot;&gt;a liste de recettes affichées pour l&#39;utilisateur avec les recettes correspondantes.&lt;/span&gt;&lt;/font&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="882.78" y="1657.5" width="309.25" height="95" as="geometry" />
         </mxCell>
-        <mxCell id="J1Xql54BsoYDIprcBaNs-436" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Fin&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
-          <mxGeometry x="680.64" y="1496.1699999999998" width="99.97" height="30" as="geometry" />
+        <mxCell id="J1Xql54BsoYDIprcBaNs-436" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Fin&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="670" y="1689.9999999999998" width="99.97" height="30" as="geometry" />
         </mxCell>
         <mxCell id="J1Xql54BsoYDIprcBaNs-441" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1080" y="440" as="sourcePoint" />
-            <mxPoint x="280" y="443" as="targetPoint" />
+            <mxPoint x="1190.52" y="460" as="sourcePoint" />
+            <mxPoint x="290" y="463" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="J1Xql54BsoYDIprcBaNs-469" value="" style="endArrow=none;html=1;rounded=0;strokeColor=#FFFFFF;" edge="1" parent="1" target="J1Xql54BsoYDIprcBaNs-398">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="1050" as="sourcePoint" />
+            <mxPoint x="720" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="J1Xql54BsoYDIprcBaNs-398" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;Le mot clé est-il présent dans les appareils ?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="574.65" y="982.89" width="187.46" height="122.86" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
