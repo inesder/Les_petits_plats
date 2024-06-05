@@ -23,12 +23,12 @@ function createSearchInput(id, onInput) {
         const searchTerm = event.target.value.trim().toLowerCase();
         if (searchTerm.length >= 3) {
             onInput(event);
-        } else {
+        }/* else {
             const allItems = id === 'ingredient-search' ? allIngredientItems :
                 id === 'equipment-search' ? allEquipmentItems :
                     allToolItems;
             updateDropdownMenu(searchInput.closest('.dropdown-menu'), allItems);
-        }
+        }*/
     });
 
     const searchButton = document.createElement('button');
