@@ -116,7 +116,7 @@ function createIngredientFilterButton(filteredRecipes) {
     filteredRecipes.forEach(recipe => {
         recipe.ingredients.forEach(ingredientObj => {
             const ingredient = ingredientObj.ingredient.toLowerCase();
-            if (!ingredients.includes(ingredient)) {
+            if (!ingredients.includes(ingredient) && !filters.ingredients.includes(ingredient)) {
                 ingredients.push(ingredient);
             }
         });
@@ -164,7 +164,7 @@ function createEquipmentFilterButton(filteredRecipes) {
     const equipment = [];
     filteredRecipes.forEach(recipe => {
         const appliance = recipe.appliance.toLowerCase();
-        if (appliance && !equipment.includes(appliance)) {
+        if (appliance && !equipment.includes(appliance)&& !filters.appliance.includes(appliance)) {
             equipment.push(appliance);
         }
     });
@@ -211,9 +211,9 @@ function createToolFilterButton(filteredRecipes) {
     const tools = [];
     filteredRecipes.forEach(recipe => {
         recipe.ustensils.forEach(ustensil => {
-            const lowerCaseUstensil = ustensil.toLowerCase();
-            if (!tools.includes(lowerCaseUstensil)) {
-                tools.push(lowerCaseUstensil);
+            const tool = ustensil.toLowerCase();
+            if (!tools.includes(tool) && !filters.ustensils.includes(tool)) {
+                tools.push(tool);
             }
         });
     });
