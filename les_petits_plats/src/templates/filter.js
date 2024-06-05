@@ -25,13 +25,13 @@ function createSearchInput(id, onInput) {
         const searchTerm = event.target.value.trim().toLowerCase();
         if (searchTerm.length >= 3) {
             onInput(event);
-        } else {
+        } /*else {
             // Si la longueur est inférieure à 3, mettreà jour le menu avec tous les éléments
             const allItems = id === 'ingredient-search' ? allIngredientItems :
                 id === 'equipment-search' ? allEquipmentItems :
                     allToolItems;
             updateDropdownMenu(searchInput.closest('.dropdown-menu'), allItems);
-        }
+        }*/
     });
 
     const searchButton = document.createElement('button');
@@ -188,6 +188,7 @@ function createIngredientFilterButton(filteredRecipes) {
 
     dropdownMenu.prepend(searchInput);
     updateDropdownMenu(dropdownMenu, allIngredientItems);
+console.log('les ingredients:', ingredients)
 
     return container;
 }
@@ -244,7 +245,7 @@ function createEquipmentFilterButton() {
 
     dropdownMenu.prepend(searchInput);
     updateDropdownMenu(dropdownMenu, allEquipmentItems);
-
+console.log('les appareils', equipment);
     return container;
 }
 

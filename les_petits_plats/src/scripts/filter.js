@@ -14,6 +14,7 @@ export function applyFilters() {
     // Filtrer par recherche dans la barre principale
     if (filters.search.length >= 3) {
         let filteredBySearch = [];
+        console.log('recette filtré par recherche',filteredBySearch);
         // Parcourir toutes les recettes pour vérifier les correspondances avec le terme de recherche
         for (let i = 0; i < filteredRecipes.length; i++) {
             let recipe = filteredRecipes[i];
@@ -40,6 +41,7 @@ export function applyFilters() {
     // Filtrer par ingrédient
     if (filters.ingredients.length > 0) {
         let filteredByIngredient = [];
+        console.log('recettes filtrées par ingrédients', filteredByIngredient)
         // Parcourir toutes les recettes pour vérifier les correspondances avec les ingrédients sélectionnés
         for (let i = 0; i < filteredRecipes.length; i++) {
             let recipe = filteredRecipes[i];
@@ -65,6 +67,7 @@ export function applyFilters() {
                 filteredByIngredient.push(recipe);
             }
         }
+        
         // Mettre à jour la liste des recettes filtrées
         filteredRecipes = filteredByIngredient;
     }
@@ -116,6 +119,7 @@ export function applyFilters() {
     }
 
     console.log('Recettes filtrées:', filteredRecipes);  // Log pour vérifier les données filtrées
+    
     displayFilter(filteredRecipes);  // Mettre à jour l'affichage avec les recettes filtrées
     displayRecipes(filteredRecipes);
 }
