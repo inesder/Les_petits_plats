@@ -195,7 +195,7 @@ console.log('les ingredients:', ingredients)
 
 
 // Fonction pour créer le bouton de filtre des appareils
-function createEquipmentFilterButton() {
+function createEquipmentFilterButton(filteredRecipes) {
     const container = createFilterButton("Appareils");
     const dropdownMenu = container.querySelector('.dropdown-menu');
 
@@ -204,7 +204,7 @@ function createEquipmentFilterButton() {
 
     // Collecter les appareils uniques des recettes
     const equipment = [];
-    for (let i = 0; i < recipes.length; i++) {
+    for (let i = 0; i < filteredRecipes.length; i++) {
         const recipe = recipes[i];
         if (recipe.appliance && !equipment.includes(recipe.appliance)) {
             equipment.push(recipe.appliance);
@@ -250,7 +250,7 @@ console.log('les appareils', equipment);
 }
 
 // Fonction pour créer le bouton de filtre des ustensiles
-function createToolFilterButton() {
+function createToolFilterButton(filteredRecipes) {
     const container = createFilterButton("Ustensiles");
     const dropdownMenu = container.querySelector('.dropdown-menu');
 
@@ -259,7 +259,7 @@ function createToolFilterButton() {
 
     // Collecter les ustensiles uniques des recettes
     const tools = [];
-    for (let i = 0; i < recipes.length; i++) {
+    for (let i = 0; i < filteredRecipes.length; i++) {
         const recipe = recipes[i];
         for (let j = 0; j < recipe.ustensils.length; j++) {
             const ustensil = recipe.ustensils[j];
