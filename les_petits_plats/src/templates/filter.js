@@ -150,7 +150,7 @@ function createIngredientFilterButton(filteredRecipes) {
         const recipe = filteredRecipes[i];
         for (let j = 0; j < recipe.ingredients.length; j++) {
             const ingredient = recipe.ingredients[j].ingredient.toLowerCase();
-            if (!ingredients.includes(ingredient)) {
+            if (!ingredients.includes(ingredient) && !filters.ingredients.includes(ingredient)) {
                 ingredients.push(ingredient);
             }
         }
@@ -205,8 +205,9 @@ function createEquipmentFilterButton(filteredRecipes) {
     // Collecter les appareils uniques des recettes
     const equipment = [];
     for (let i = 0; i < filteredRecipes.length; i++) {
-        const recipe = recipes[i];
-        if (recipe.appliance && !equipment.includes(recipe.appliance)) {
+        const recipe = filteredRecipes[i];
+        const appliance = recipe.appliance.toLowerCase();
+        if (recipe.appliance && !equipment.includes(recipe.appliance) && !filters.appliance.includes(appliance)) {
             equipment.push(recipe.appliance);
         }
     }
@@ -260,11 +261,11 @@ function createToolFilterButton(filteredRecipes) {
     // Collecter les ustensiles uniques des recettes
     const tools = [];
     for (let i = 0; i < filteredRecipes.length; i++) {
-        const recipe = recipes[i];
+        const recipe = filteredRecipes[i];
         for (let j = 0; j < recipe.ustensils.length; j++) {
-            const ustensil = recipe.ustensils[j];
-            if (!tools.includes(ustensil)) {
-                tools.push(ustensil);
+            const tool = recipe.ustensils[j].toLowerCase();
+            if (!tools.includes(tool) && !filters.ustensils.includes(tool)) {
+                tools.push(tool);
             }
         }
     }
