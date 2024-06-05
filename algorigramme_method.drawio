@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-05T11:35:16.524Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="A3yrn48jDbUOERylX7Ck" version="24.4.14" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-05T11:43:59.392Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="IQ-P1w8lBgXrmFbxHvoz" version="24.4.14" type="github">
   <diagram name="Page-1" id="Ul3hG8IQeu0czUQaKyKT">
     <mxGraphModel dx="1240" dy="653" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -112,34 +112,31 @@
         <mxCell id="y2qfPMTWO536Oq6Htdhc-29" value="&lt;div&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/font&gt;&lt;/div&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Le mot-clé de recherche&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;div style=&quot;font-size: 19px;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&amp;nbsp;est il&amp;nbsp;&lt;/font&gt;&lt;font style=&quot;background-color: initial; font-size: 19px;&quot;&gt;inférieur ou égal&amp;nbsp;&lt;/font&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;à&amp;nbsp;&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 19px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;3 caractères ?&lt;/font&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;&amp;nbsp;&lt;/font&gt;&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="284.14" y="592" width="224.16" height="146.91" as="geometry" />
         </mxCell>
-        <mxCell id="y2qfPMTWO536Oq6Htdhc-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="y2qfPMTWO536Oq6Htdhc-31" target="y2qfPMTWO536Oq6Htdhc-34">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="y2qfPMTWO536Oq6Htdhc-31" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Parcourir les ingrédients dans la liste &#39;allIngredienttems&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="574.14" y="630.27" width="215.86" height="69.73" as="geometry" />
-        </mxCell>
-        <mxCell id="y2qfPMTWO536Oq6Htdhc-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="y2qfPMTWO536Oq6Htdhc-34" target="y2qfPMTWO536Oq6Htdhc-36">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="y2qfPMTWO536Oq6Htdhc-33" value="OUI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=1" vertex="1" connectable="0" parent="y2qfPMTWO536Oq6Htdhc-32">
-          <mxGeometry x="-0.4563" y="2" relative="1" as="geometry">
-            <mxPoint x="5" y="1" as="offset" />
+        <mxCell id="y2qfPMTWO536Oq6Htdhc-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="y2qfPMTWO536Oq6Htdhc-31" target="y2qfPMTWO536Oq6Htdhc-36">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="833.5800042397968" y="664.4782608695652" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="y2qfPMTWO536Oq6Htdhc-34" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Le mot clé est-il présent dans les ingrédients ?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="833.58" y="604.4599999999999" width="183.09" height="120" as="geometry" />
+        <mxCell id="y2qfPMTWO536Oq6Htdhc-31" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Filtrer les ingrédients dans la liste &#39;allIngredienttems&#39;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="574.14" y="630.27" width="215.86" height="69.73" as="geometry" />
         </mxCell>
         <mxCell id="y2qfPMTWO536Oq6Htdhc-35" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="y2qfPMTWO536Oq6Htdhc-36" target="y2qfPMTWO536Oq6Htdhc-38">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="y2qfPMTWO536Oq6Htdhc-36" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Mise à jour de la liste d&#39;ingrédients affichée dans le menu déroulant avec les termes correspondants&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="1081.54" y="615.6099999999999" width="294.78" height="97.69" as="geometry" />
+          <mxGeometry x="840" y="616.2899999999998" width="294.78" height="97.69" as="geometry" />
         </mxCell>
         <mxCell id="y2qfPMTWO536Oq6Htdhc-37" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="y2qfPMTWO536Oq6Htdhc-38" target="y2qfPMTWO536Oq6Htdhc-40">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1535" y="665" />
+              <mxPoint x="1535" y="717" />
+              <mxPoint x="1606" y="717" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="y2qfPMTWO536Oq6Htdhc-38" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;L&#39;utilisateur sélectionne un ingrédient dans la liste mise à jour&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="1453.15" y="628.38" width="305.09" height="70.67" as="geometry" />
+          <mxGeometry x="1210" y="630.12" width="305.09" height="70.67" as="geometry" />
         </mxCell>
         <mxCell id="y2qfPMTWO536Oq6Htdhc-39" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
@@ -150,16 +147,22 @@
         <mxCell id="y2qfPMTWO536Oq6Htdhc-40" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Un tag est créé avec l&#39;ingrédient sélectionné&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="1454.5300000000002" y="736.7099999999999" width="302.33" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="y2qfPMTWO536Oq6Htdhc-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="y2qfPMTWO536Oq6Htdhc-43" target="y2qfPMTWO536Oq6Htdhc-45">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="y2qfPMTWO536Oq6Htdhc-41" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1450" y="910" as="sourcePoint" />
+            <mxPoint x="1376.3199999999997" y="910" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1480" y="910" />
+              <mxPoint x="1480" y="911" />
+              <mxPoint x="1413" y="911" />
+              <mxPoint x="1413" y="910" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="y2qfPMTWO536Oq6Htdhc-42" value="OUI" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=13;fontStyle=1" vertex="1" connectable="0" parent="y2qfPMTWO536Oq6Htdhc-41">
           <mxGeometry x="-0.232" y="-3" relative="1" as="geometry">
-            <mxPoint x="-6" y="2" as="offset" />
+            <mxPoint x="-27" y="2" as="offset" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="y2qfPMTWO536Oq6Htdhc-43" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;L&#39;ingrédient sélectionné existe-t-il dans le tableau des recettes filtrées?&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="1486.25" y="831.36" width="240.99" height="157.95" as="geometry" />
         </mxCell>
         <mxCell id="y2qfPMTWO536Oq6Htdhc-44" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="y2qfPMTWO536Oq6Htdhc-45" target="y2qfPMTWO536Oq6Htdhc-49">
           <mxGeometry relative="1" as="geometry" />
@@ -398,23 +401,6 @@
             <mxPoint y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="y2qfPMTWO536Oq6Htdhc-105" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="929.4" y="724.46" as="sourcePoint" />
-            <mxPoint x="1109.4" y="754.46" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="929.4" y="754.46" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="y2qfPMTWO536Oq6Htdhc-106" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;NON&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="y2qfPMTWO536Oq6Htdhc-105">
-          <mxGeometry x="0.1438" y="-2" relative="1" as="geometry">
-            <mxPoint y="-2" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="y2qfPMTWO536Oq6Htdhc-107" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;Aucun ingrédient ne s&#39;affiche&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="1110.8899999999999" y="730" width="258" height="50" as="geometry" />
-        </mxCell>
         <mxCell id="y2qfPMTWO536Oq6Htdhc-108" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="925.03" y="1218.69" as="sourcePoint" />
@@ -448,23 +434,6 @@
         </mxCell>
         <mxCell id="y2qfPMTWO536Oq6Htdhc-113" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;Aucun ustensile ne s&#39;affiche&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="1106.52" y="1747.69" width="258" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="y2qfPMTWO536Oq6Htdhc-114" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="y2qfPMTWO536Oq6Htdhc-116">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1610.45" y="989.31" as="sourcePoint" />
-            <mxPoint x="1460" y="1040" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="1610" y="1040" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="y2qfPMTWO536Oq6Htdhc-115" value="&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;b&gt;NON&lt;/b&gt;&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="y2qfPMTWO536Oq6Htdhc-114">
-          <mxGeometry x="0.3134" relative="1" as="geometry">
-            <mxPoint x="-1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="y2qfPMTWO536Oq6Htdhc-116" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;Aucune recette ne s&#39;affiche&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
-          <mxGeometry x="1280" y="1010" width="221.06" height="60.69" as="geometry" />
         </mxCell>
         <mxCell id="y2qfPMTWO536Oq6Htdhc-117" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -522,6 +491,9 @@
         </mxCell>
         <mxCell id="y2qfPMTWO536Oq6Htdhc-127" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;Mise à jour de la liste de recettes filtrées, des listes d&#39;ingrédients, d&#39;appareils et d&#39;ustensiles et leur affichage&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="740.0000000000001" y="1876.19" width="290" height="94.04" as="geometry" />
+        </mxCell>
+        <mxCell id="y2qfPMTWO536Oq6Htdhc-129" value="&lt;span style=&quot;font-size: 19px;&quot;&gt;Vérifier avec filter et some que chaque ingrédient sélectionné est présent dans la recette&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1476.86" y="858.73" width="280" height="113.5" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
