@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-05T12:11:24.045Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="-L8a3u8lQZmFYem5fNuC" version="24.4.14" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-05T12:13:54.970Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="x7JgTE8SqMXRymgq133I" version="24.4.14" type="github">
   <diagram name="Page-1" id="Ul3hG8IQeu0czUQaKyKT">
     <mxGraphModel dx="1501" dy="791" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -280,9 +280,13 @@
         <mxCell id="y2qfPMTWO536Oq6Htdhc-83" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;L&#39;utilisateur sélectionne un ustensiles dans la liste mise à jour&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="1215.3700000000001" y="1638.7500000000002" width="304.63" height="76.25" as="geometry" />
         </mxCell>
-        <mxCell id="y2qfPMTWO536Oq6Htdhc-84" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="y2qfPMTWO536Oq6Htdhc-85">
+        <mxCell id="y2qfPMTWO536Oq6Htdhc-139" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1601.5549999999998" y="1843.69" as="targetPoint" />
+            <mxPoint x="1599.0526315789475" y="1810.88" as="sourcePoint" />
+            <mxPoint x="1603.8947368421054" y="1877.15" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1604" y="1811" />
+            </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="y2qfPMTWO536Oq6Htdhc-85" value="&lt;font style=&quot;font-size: 19px;&quot;&gt;Un tag est créé avec l&#39;ustensile sélectionné&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
