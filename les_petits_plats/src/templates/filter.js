@@ -160,7 +160,7 @@ function createIngredientFilterButton(filteredRecipes) {
     return container;
 }
 
-function createEquipmentFilterButton() {
+function createEquipmentFilterButton(filteredRecipes) {
     const container = createFilterButton("Appareils");
     const dropdownMenu = container.querySelector('.dropdown-menu');
 
@@ -168,7 +168,7 @@ function createEquipmentFilterButton() {
     dropdownMenu.innerHTML = '';
 
     const equipment = [];
-    recipes.forEach(recipe => {
+    filteredRecipes.forEach(recipe => {
         const appliance = recipe.appliance.toLowerCase();
         if (appliance && !equipment.includes(appliance)) {
             equipment.push(appliance);
@@ -207,7 +207,7 @@ function createEquipmentFilterButton() {
     return container;
 }
 
-function createToolFilterButton() {
+function createToolFilterButton(filteredRecipes) {
     const container = createFilterButton("Ustensiles");
     const dropdownMenu = container.querySelector('.dropdown-menu');
 
@@ -215,7 +215,7 @@ function createToolFilterButton() {
     dropdownMenu.innerHTML = '';
 
     const tools = [];
-    recipes.forEach(recipe => {
+    filteredRecipes.forEach(recipe => {
         recipe.ustensils.forEach(ustensil => {
             const lowerCaseUstensil = ustensil.toLowerCase();
             if (!tools.includes(lowerCaseUstensil)) {
