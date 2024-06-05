@@ -1,4 +1,3 @@
-import recipes from '../datas/recipes.js'; // Ajout de l'importation de recipes
 import { filters } from '../models/state.js';  // Importer les filtres partagés
 import { applyFilters } from '../scripts/filter.js';  // Importer la fonction applyFilters
 
@@ -23,12 +22,7 @@ function createSearchInput(id, onInput) {
         const searchTerm = event.target.value.trim().toLowerCase();
         if (searchTerm.length >= 3) {
             onInput(event);
-        }/* else {
-            const allItems = id === 'ingredient-search' ? allIngredientItems :
-                id === 'equipment-search' ? allEquipmentItems :
-                    allToolItems;
-            updateDropdownMenu(searchInput.closest('.dropdown-menu'), allItems);
-        }*/
+        }
     });
 
     const searchButton = document.createElement('button');
