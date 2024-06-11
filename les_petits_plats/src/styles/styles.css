@@ -185,12 +185,15 @@ h1, h2, h3 {
 
 .dropdown-menu {
     transform: none !important;
-    font-size: 14px;  
+    font-size: 14px;
+    max-height: 260px; /* Hauteur fixe pour les menus déroulants */
+    overflow-y: auto; /* Barre de défilement verticale */
+    scrollbar-width: none; /* Barre de défilement fine pour Firefox */  
 }
 
 .dropdown-menu.show {
     transform: none !important;
-    width: 280px;
+    width: 200px;
     top:90% !important;  
 }
 
