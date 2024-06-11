@@ -252,22 +252,18 @@ function createToolFilterButton(filteredRecipes) {
 
 export function displayFilter(filteredRecipes) {
     const filtersSection = document.querySelector('.filters-section');
-
     let filtersContainer = document.querySelector('.filters-container');
     let tagsContainer = document.querySelector('.tags-container');
+    const filtersHeading = document.createElement('div');
+    filtersHeading.classList.add('filters-heading');
+    let recipeCountElement = document.querySelector('.recipe-count');
 
     if (!filtersContainer) {
         filtersContainer = document.createElement('div');
         filtersContainer.classList.add("filters-container");
-        filtersSection.appendChild(filtersContainer);
+        filtersHeading.prepend(filtersContainer);
     } else {
         filtersContainer.innerHTML = '';
-    }
-
-    if (!tagsContainer) {
-        tagsContainer = document.createElement('div');
-        tagsContainer.classList.add('tags-container');
-        filtersSection.insertBefore(tagsContainer, filtersContainer);
     }
 
     const ingredientFilter = createIngredientFilterButton(filteredRecipes);
@@ -277,4 +273,19 @@ export function displayFilter(filteredRecipes) {
     filtersContainer.appendChild(ingredientFilter);
     filtersContainer.appendChild(equipmentFilter);
     filtersContainer.appendChild(toolFilter);
+    
+    // Créer l'élément de compteur de recettes s'il n'existe pas déjà
+    if (!recipeCountElement) {
+        recipeCountElement = document.createElement('p');
+        recipeCountElement.classList.add('recipe-count');
+        filtersSection.appendChild(filtersHeading);
+        filtersHeading.appendChild(recipeCountElement);
+    }
+
+    // Créer le conteneur de tags s'il n'existe pas déjà
+    if (!tagsContainer) {
+        tagsContainer = document.createElement('div');
+        tagsContainer.classList.add('tags-container');
+        filtersSection.appendChild(tagsContainer);
+    }
 }

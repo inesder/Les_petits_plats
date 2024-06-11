@@ -138,16 +138,11 @@ h1, h2, h3 {
 }
 
 .filters-section{
-    display: flex;
-    flex-direction: column-reverse;
     padding-left: 100px;
     padding-top: 50px;
     padding-bottom: 50px;
-    flex-wrap: wrap;
-    justify-content: space-between;
     width: 81%;
     margin: 0 auto;
-    align-items: start;
 }
 
 .filters-container{
@@ -255,4 +250,16 @@ width: 150px;
     color: #ced4da;
     border-color: #ced4da;
     border-left: none;
+}
+
+.filters-heading {
+    display: flex;
+    gap: 38%;
+    align-items: center;
+}
+
+.filters-heading p {
+    margin: 0;
+    font-family: Anton;
+    font-size: 21px;
 }
