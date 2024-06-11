@@ -7,6 +7,21 @@ import { displayRecipes } from '../templates/cards.js';
 // Sélectionner l'élément d'entrée de recherche principal
 const searchInput = document.querySelector('.search-input');
 
+// Fonction pour créer et mettre à jour le compteur de recettes
+function recipeCounter(filteredRecipes) {
+    const recipeCountElement = document.querySelector('.recipe-count');
+    if (recipeCountElement) {
+        const count = filteredRecipes.length;
+        if (count === 0) {
+            recipeCountElement.textContent = 'Aucune recette';
+        } else if (count === 1) {
+            recipeCountElement.textContent = '1 recette';
+        } else {
+            recipeCountElement.textContent = `${count} recettes`;
+        }
+    }
+}
+
 // Fonction pour appliquer les filtres et mettre à jour l'affichage des recettes
 export function applyFilters() {
     let filteredRecipes = [...recipes]; // Initialiser avec toutes les recettes
@@ -14,7 +29,7 @@ export function applyFilters() {
     // Filtrer par recherche dans la barre principale
     if (filters.search.length >= 3) {
         let filteredBySearch = [];
-        console.log('recette filtré par recherche',filteredBySearch);
+        console.log('recette filtré par recherche', filteredBySearch);
         // Parcourir toutes les recettes pour vérifier les correspondances avec le terme de recherche
         for (let i = 0; i < filteredRecipes.length; i++) {
             let recipe = filteredRecipes[i];
@@ -67,7 +82,7 @@ export function applyFilters() {
                 filteredByIngredient.push(recipe);
             }
         }
-        
+
         // Mettre à jour la liste des recettes filtrées
         filteredRecipes = filteredByIngredient;
     }
@@ -119,10 +134,15 @@ export function applyFilters() {
     }
 
     console.log('Recettes filtrées:', filteredRecipes);  // Log pour vérifier les données filtrées
+
     
+    // Mettre à jour le compteur de recettes
+    recipeCounter(filteredRecipes);
     displayFilter(filteredRecipes);  // Mettre à jour l'affichage avec les recettes filtrées
     displayRecipes(filteredRecipes);
+
 }
+
 
 
 // Fonction pour gérer la recherche principale et les champs de recherche des filtres
@@ -138,4 +158,5 @@ function handleSearch() {
 // Fonction pour initier le tri et le filtrage des cartes de recettes
 export function filterCards() {
     handleSearch();
+    applyFilters();
 }
